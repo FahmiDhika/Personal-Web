@@ -81,7 +81,7 @@ export default function Home() {
                 className="aspect-square rounded-full object-cover border-4 mb-4 border-white transition-transform duration-300"
               />
               <h1 className="w-full mb-2 text-center">
-                i&apos;sam{" "}
+                i&apos;am{" "}
                 <span className="text-5xl font-bold text-[#FE4F2D]">
                   Fahmi Dhika
                 </span>
