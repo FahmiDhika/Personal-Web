@@ -181,7 +181,7 @@ export default function Home() {
                       transition={{ duration: 0.5 }}
                     >
                       <h2 className="text-6xl font-bold mb-2 pb-3 border-b-4 border-white">
-                        Project Saya
+                        My Project
                       </h2>
                       <div className="h-[400px] lg:h-[300px] overflow-y-auto">
                         <Project />
