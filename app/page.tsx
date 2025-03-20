@@ -11,10 +11,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("Profile");
 
   return (
-    <motion.div
-      layout
-      className="w-full h-fit lg:py-12 flex items-center lg:px-52"
-    >
+    <motion.div layout className="w-full lg:py-12 flex items-center lg:px-52">
       <AnimatePresence mode="wait">
         {!isClicked ? (
           // Tampilan Awal
@@ -111,7 +108,7 @@ export default function Home() {
               className="w-full gap-7 flex flex-wrap justify-center lg:w-2/3 "
             >
               <div className="w-full flex gap-7 lg:gap-10 text-lg font-semibold tracking-widest justify-center items-center">
-                {["Profile", "Project", "Blog"].map((tab) => (
+                {["Profile", "Project", "Contact"].map((tab) => (
                   <button
                     key={tab}
                     className={`${
@@ -123,7 +120,7 @@ export default function Home() {
                   </button>
                 ))}
               </div>
-              <div className="w-5/6 bg-[#1E1E1E] p-4 h-fit">
+              <div className="w-5/6 p-4 max-h-[500px]">
                 <AnimatePresence mode="wait">
                   {activeTab === "Profile" && (
                     <motion.div
@@ -135,7 +132,38 @@ export default function Home() {
                     >
                       <h2 className="text-2xl font-bold mb-2">About Me</h2>
                       <div className="h-[400px] lg:h-[300px] overflow-y-auto">
-                        <p className="mt-2 text-gray-300">dwadwa</p>
+                        <p className="mt-2 text-justify">
+                          Hello, my name is Fahmi Ahmadhika Ramadhan, you can
+                          call me Fahmi. I am a vocational high school student
+                          in one of the schools in Indonesia, with a passion for
+                          coding. I love playing with computers, from editing
+                          videos, photos, creating programs, to playing games. I
+                          spend almost a quarter of my day in front of the
+                          computer.
+                        </p>
+                        <p className="mt-4 text-justify">
+                          Besides my love for computers, I also love learning
+                          new things in the world of technology. I often try
+                          different programming languages, from Python to
+                          JavaScript with modern frameworks. The challenge of
+                          coding and finding solutions makes me more interested
+                          in developing. Outside of coding, I also enjoy playing
+                          games and editing videos or photos as a form of
+                          creativity. I believe that technology and creativity
+                          can go hand in hand, helping me to understand logic,
+                          strategy, and design in creating applications or
+                          programs.
+                        </p>
+                        <p className="mt-4 text-justify">
+                          In the future, I aspire to be a reliable developer who
+                          can create useful digital products. I want to continue
+                          honing my coding skills and understand more about how
+                          technology can help our daily lives. With
+                          determination and hard work, I believe I can realize
+                          my dream. May my journey in the world of technology
+                          continue to grow and bring benefits, not only for
+                          myself but also for others.
+                        </p>
                       </div>
                     </motion.div>
                   )}
@@ -149,21 +177,21 @@ export default function Home() {
                     >
                       <h2 className="text-2xl font-bold mb-2">Project Saya</h2>
                       <div className="h-[400px] lg:h-[300px] overflow-y-auto">
-                        <p className="mt-2 text-gray-300">dwadwa</p>
+                        <p className="mt-2 text-gray-300">Coming soon!!</p>
                       </div>
                     </motion.div>
                   )}
-                  {activeTab === "Blog" && (
+                  {activeTab === "Contact" && (
                     <motion.div
-                      key="blog"
+                      key="Contact"
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <h2 className="text-2xl font-bold mb-2">Blog</h2>
+                      <h2 className="text-2xl font-bold mb-2">Contact</h2>
                       <div className="h-[400px] lg:h-[300px] overflow-y-auto">
-                        <p className="mt-2 text-gray-300">Cooming soon!!</p>
+                        <p className="mt-2"></p>
                       </div>
                     </motion.div>
                   )}

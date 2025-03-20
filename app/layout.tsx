@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="cursor-none">
-      <body className={`antialiased overflow-x-hidden max-h-dvh`} cz-shortcut-listen="true">
+      <body
+        className={`antialiased overflow-x-hidden min-h-dvh`}
+        cz-shortcut-listen="true"
+      >
         <div className="hidden lg:block">
           <Cursor />
         </div>
