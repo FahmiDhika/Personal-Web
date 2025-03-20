@@ -5,6 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import gua from "@/public/assets/gua.jpg";
 import { TypeAnimation } from "react-type-animation";
+import Project from "@/components/project/index";
+import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
 
 export default function Home() {
   const [isClicked, setIsClicked] = useState<boolean>(false);
@@ -105,7 +108,7 @@ export default function Home() {
             {/* Konten */}
             <motion.div
               layout
-              className="w-full gap-7 flex flex-wrap justify-center lg:w-2/3 "
+              className="w-full gap-7 flex flex-wrap justify-center lg:w-2/3 mb-14"
             >
               <div className="w-full flex gap-7 lg:gap-10 text-lg font-semibold tracking-widest justify-center items-center">
                 {["Profile", "Project", "Contact"].map((tab) => (
@@ -130,7 +133,9 @@ export default function Home() {
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <h2 className="text-2xl font-bold mb-2">About Me</h2>
+                      <h2 className="text-6xl font-bold mb-2 border-b-4 border-white">
+                        About Me
+                      </h2>
                       <div className="h-[400px] lg:h-[300px] overflow-y-auto">
                         <p className="mt-2 text-justify">
                           Hello, my name is Fahmi Ahmadhika Ramadhan, you can
@@ -175,9 +180,11 @@ export default function Home() {
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <h2 className="text-2xl font-bold mb-2">Project Saya</h2>
+                      <h2 className="text-6xl font-bold mb-2 pb-3 border-b-4 border-white">
+                        Project Saya
+                      </h2>
                       <div className="h-[400px] lg:h-[300px] overflow-y-auto">
-                        <p className="mt-2 text-gray-300">Coming soon!!</p>
+                        <Project className="py-4 px-6 mt-2"></Project>
                       </div>
                     </motion.div>
                   )}
@@ -189,9 +196,26 @@ export default function Home() {
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <h2 className="text-2xl font-bold mb-2">Contact</h2>
+                      <h2 className="text-6xl font-bold mb-6 border-b-4 border-white">
+                        Contact
+                      </h2>
                       <div className="h-[400px] lg:h-[300px] overflow-y-auto">
-                        <p className="mt-2"></p>
+                        <div className="w-full mb-8">
+                          <h1 className="text-4xl uppercase tracking-widest flex items-center gap-3 mb-2">
+                            <MdEmail size={50} />
+                            Email
+                          </h1>
+                          <p>- example@gmail.com</p>
+                          <p>- business@gmail.com</p>
+                        </div>
+                        <div className="w-full mb-8">
+                          <h1 className="text-4xl uppercase tracking-widest flex items-center gap-3 mb-2">
+                            <FaPhone size={40} />
+                            Phone
+                          </h1>
+                          <p>+62 82746182758</p>
+                          <p>+62 87283756381</p>
+                        </div>
                       </div>
                     </motion.div>
                   )}
