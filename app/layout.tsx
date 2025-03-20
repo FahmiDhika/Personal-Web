@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="cursor-none">
       <head>
-        <link rel="icon" type="image/png" href="/logo.svg" />
+        <link rel="icon" type="image/svg" href="/Logo.svg?v=2" />
       </head>
       <body className="antialiased overflow-x-hidden min-h-dvh">
         <div className="hidden lg:block">
