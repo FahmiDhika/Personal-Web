@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const DisplayProject = ({ className }: any) => {
+function DisplayProject() {
   const [projectData] = useState([
     {
       id: 1,
@@ -46,7 +46,7 @@ const DisplayProject = ({ className }: any) => {
       {projectData.map((i, no) => {
         return (
           <div
-            className={`${className}`}
+            className={`py-4 px-6 mt-2`}
             style={{backgroundColor: i.bgColor}}
             key={no}
           >

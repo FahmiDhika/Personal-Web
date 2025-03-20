@@ -81,7 +81,7 @@ export default function Home() {
                 className="aspect-square rounded-full object-cover border-4 mb-4 border-white transition-transform duration-300"
               />
               <h1 className="w-full mb-2 text-center">
-                i'am{" "}
+                i&apos;sam{" "}
                 <span className="text-5xl font-bold text-[#FE4F2D]">
                   Fahmi Dhika
                 </span>
@@ -184,7 +184,7 @@ export default function Home() {
                         Project Saya
                       </h2>
                       <div className="h-[400px] lg:h-[300px] overflow-y-auto">
-                        <Project className="py-4 px-6 mt-2"></Project>
+                        <Project />
                       </div>
                     </motion.div>
                   )}
